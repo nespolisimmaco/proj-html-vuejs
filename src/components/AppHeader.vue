@@ -1,5 +1,7 @@
 <script>
+import { store } from "../store";
 import "@fortawesome/fontawesome-free/css/all.css"
+
 export default {
     name: "AppHeader",
     props: {
@@ -7,7 +9,7 @@ export default {
     },
     data() {
         return {
-
+            store
         }
     }
 }
@@ -37,8 +39,12 @@ export default {
             <div class="header-input d-flex align-items-center w-25 h-100">
                 <!-- Language -->
                 <div class="language d-flex justify-content-center align-items-center w-50 h-100">
-                    <img src="../img/en.png" alt="English">
-                    <select class="mx-2" name="languages" id="languages">
+                    <!-- Flags -->
+                    <img v-if="store.chosenLanguage == 'english'" src="../img/en.png" alt="English">
+                    <img v-if="store.chosenLanguage == 'french'" src="../img/fr.png" alt="Frecnh">
+                    <img v-if="store.chosenLanguage == 'deutsch'" src="../img/de.png" alt="Deutsch">
+                    <!-- Select language -->
+                    <select class="mx-2" name="languages" id="languages" v-model="store.chosenLanguage">
                         <option value="english">ENGLISH</option>
                         <option value="french">FRENCH</option>
                         <option value="deutsch">DEUTSCH</option>
