@@ -6,7 +6,7 @@ export default {
   },
   data() {
     return {
-
+      headerLinks: ["Home", "Pages", "Courses", "Features", "Blog", "Shop"]
     }
   }
 }
@@ -14,7 +14,7 @@ export default {
     
 <template>
   <div>
-    <AppHeader />
+    <AppHeader :links="headerLinks" />
   </div>
 </template>
 
