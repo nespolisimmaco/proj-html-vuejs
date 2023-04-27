@@ -57,6 +57,12 @@ export default {
                 <!-- End Column -->
             </div>
             <!-- End Row -->
+            <!-- Call to action -->
+            <div class="cta mt-5">
+                <p>Take the control of their life back and start doing things to make their dreams come true. <a
+                        href="#">View
+                        all courses &rarr;</a></p>
+            </div>
         </div>
         <!-- End Container -->
     </div>
@@ -80,6 +86,7 @@ export default {
     }
 }
 
+// Card
 .card-img-overlay {
     background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.4) 20%, rgba(0, 0, 0, 0) 100%);
 
@@ -90,6 +97,18 @@ export default {
     .card-text {
         color: white;
         font-weight: 700;
+    }
+}
+
+// Call to action
+.cta {
+    width: 40%;
+    margin: 0 auto;
+
+    a {
+        color: black;
+        text-decoration: underline lightgrey;
+        font-weight: 600;
     }
 }
 </style>
