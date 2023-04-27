@@ -23,7 +23,7 @@ export default {
             </div>
             <!-- Jumbotron image -->
             <div class="jumbotron-image">
-                <img src="../img/home-business-hero-avatar.png" alt="Man">
+                <img src="../assets/img/home-business-hero-avatar.png" alt="Man">
             </div>
         </div>
         <!-- End Container -->
@@ -86,7 +86,7 @@ export default {
 
     &-image {
         width: 60%;
-        background-image: url(../img/home-business-hero-global-image.png);
+        background-image: url(../assets/img/home-business-hero-global-image.png);
         background-size: cover;
         padding-top: 2rem;
         padding-left: 1rem;

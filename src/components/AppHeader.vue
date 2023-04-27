@@ -22,7 +22,7 @@ export default {
             <!-- Logo -->
             <div class="logo text-end">
                 <a href="#">
-                    <img src="../img/dark-logo.png" alt="MaxCoach logo">
+                    <img src="../assets/img/dark-logo.png" alt="MaxCoach logo">
                 </a>
             </div>
             <!-- Links -->
@@ -40,9 +40,9 @@ export default {
                 <!-- Language -->
                 <div class="language d-flex justify-content-center align-items-center w-50 h-100">
                     <!-- Flags -->
-                    <img v-if="store.chosenLanguage == 'english'" src="../img/en.png" alt="English">
-                    <img v-if="store.chosenLanguage == 'french'" src="../img/fr.png" alt="Frecnh">
-                    <img v-if="store.chosenLanguage == 'deutsch'" src="../img/de.png" alt="Deutsch">
+                    <img v-if="store.chosenLanguage == 'english'" src="../assets/img/en.png" alt="English">
+                    <img v-if="store.chosenLanguage == 'french'" src="../assets/img/fr.png" alt="Frecnh">
+                    <img v-if="store.chosenLanguage == 'deutsch'" src="../assets/img/de.png" alt="Deutsch">
                     <!-- Select language -->
                     <select class="mx-2" name="languages" id="languages" v-model="store.chosenLanguage">
                         <option value="english">ENGLISH</option>
