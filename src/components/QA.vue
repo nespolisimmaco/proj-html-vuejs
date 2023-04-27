@@ -1,17 +1,16 @@
 <script>
 import "@fortawesome/fontawesome-free/css/all.css";
 export default {
-    data() {
-        return {}
-    }
+    name: "QA"
 }
 </script>
 
 <template>
     <!-- Q&A -->
     <div class="QA">
+        <img id="dots" src="../assets/img/maxcoach-shape-07-150x150.png">
         <!-- Container -->
-        <div class="container d-flex justify-content-center">
+        <div class="container d-flex justify-content-start">
             <!-- Video -->
             <div class="video d-flex align-items-center me-5">
                 <img class="video-poster" src="../assets/img/home-business-video-poster-670x450.jpg" alt="Video poster">
@@ -49,7 +48,7 @@ export default {
         </div>
         <!-- End Container -->
     </div>
-    <!-- Q&A -->
+    <!-- End Q&A -->
 </template>
 
 
@@ -58,7 +57,15 @@ export default {
 
 .QA {
     background-color: $QA-blue;
-    padding: 5rem 0;
+    padding: 5.5rem 0;
+    position: relative;
+    background-image: url("../assets/img/background-map-dots-top-right-transparent.png");
+    background-repeat: no-repeat;
+    background-position: right 0 top 0;
+
+    .container {
+        padding-left: 40px;
+    }
 
     .video {
         position: relative;
@@ -77,7 +84,7 @@ export default {
 
     .questions {
         color: white;
-        width: 33%;
+        width: 35%;
 
         h2 {
             font-weight: 600;
@@ -132,5 +139,10 @@ export default {
         }
     }
 
+    #dots {
+        position: absolute;
+        bottom: 0;
+        left: 30px;
+    }
 }
 </style>
