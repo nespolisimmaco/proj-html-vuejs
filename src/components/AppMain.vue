@@ -3,19 +3,17 @@ import AppJumbotron from './AppJumbotron.vue';
 import CompanyFeatures from './CompanyFeatures.vue';
 import CompanyServices from './CompanyServices.vue';
 import CompanyCourses from './CompanyCourses.vue';
+import QA from './QA.vue';
 export default {
     name: "AppMain",
     components: {
         AppJumbotron,
         CompanyFeatures,
         CompanyServices,
-        CompanyCourses
-    },
-    data() {
-        return {
-
-        }
+        CompanyCourses,
+        QA
     }
+}
 }
 </script>
         
@@ -25,6 +23,7 @@ export default {
         <CompanyFeatures />
         <CompanyServices />
         <CompanyCourses />
+        <QA />
     </main>
 </template>
 
