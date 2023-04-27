@@ -1,11 +1,13 @@
 <script>
 import AppJumbotron from './AppJumbotron.vue';
 import CompanyFeatures from './CompanyFeatures.vue';
+import CompanyServices from './CompanyServices.vue';
 export default {
     name: "AppMain",
     components: {
         AppJumbotron,
-        CompanyFeatures
+        CompanyFeatures,
+        CompanyServices
     },
     data() {
         return {
@@ -19,6 +21,7 @@ export default {
     <main>
         <AppJumbotron />
         <CompanyFeatures />
+        <CompanyServices />
     </main>
 </template>
 

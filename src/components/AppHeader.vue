@@ -73,7 +73,6 @@ export default {
 <style scoped lang="scss">
 header {
     height: 80px;
-    border: 1px solid black;
 }
 
 // Logo

@@ -71,6 +71,7 @@ export default {
 @use "../style/partials/mixins" as *;
 @use "../style/partials/variables" as *;
 
+// Features
 .features {
     padding: 5rem 0 4rem;
 }
@@ -83,7 +84,7 @@ export default {
     }
 
     h2 {
-        margin: 2rem 0 3rem;
+        margin: 1rem 0 3rem;
     }
 }
 
@@ -110,4 +111,6 @@ export default {
     color: white;
     margin-left: 10px;
 }
+
+// End Features
 </style>
