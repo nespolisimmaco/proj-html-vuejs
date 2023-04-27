@@ -14,7 +14,6 @@ export default {
         QA
     }
 }
-}
 </script>
         
 <template>
