@@ -1,4 +1,5 @@
 <script>
+import "@fortawesome/fontawesome-free/css/all.css";
 export default {
     data() {
         return {}
@@ -18,16 +19,32 @@ export default {
             </div>
             <!-- Question and answers -->
             <div class="questions ms-5">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati aliquam sint sequi tempore deleniti
-                    illum consequatur. Esse in blanditiis atque quas sunt facilis, recusandae illum, vitae, totam id earum
-                    aut sit. Doloremque earum est at inventore eius, ratione odit quisquam molestias. Ut sequi, obcaecati ea
-                    eligendi impedit, ipsa quo eos atque cupiditate esse, nostrum ipsum ipsam similique eius ab dolorum est
-                    rem aut saepe eaque laboriosam? Vero magni minima quis explicabo laboriosam laudantium quasi. Ab a est
-                    consectetur maxime ullam dolor nihil temporibus itaque. Molestias illum velit reprehenderit incidunt
-                    exercitationem optio, nesciunt, culpa repudiandae explicabo officia veritatis debitis vel asperiores.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ratione sequi eos non quos accusamus
-                    eaque explicabo esse alias ducimus.
-                </p>
+                <h2>To Thrive in Business Today, You'll Need a Good Plan</h2>
+                <!-- Questions list -->
+                <ul class="ps-0">
+                    <li>
+                        <h5>How can we help?</h5>
+                        <p>How many courses you've been on, using however many techniques and methods. Unless you've come to
+                            realize the value of mindset, then you've yet to understand how succesa comes.</p>
+                        <p>With everyone else's mindset involved impacting too. Hence why business coaching is so crucial
+                            for success.</p>
+                    </li>
+                    <li>
+                        <h5>Why would I need a business COACH?</h5>
+                        <p>How many courses you've been on, using however many techniques and methods. Unless you've come to
+                            realize the value of mindset, then you've yet to understand how succesa comes.</p>
+                        <p>With everyone else's mindset involved impacting too. Hence why business coaching is so crucial
+                            for success.</p>
+                    </li>
+                    <li>
+                        <h5>What is one-on-one coaching?</h5>
+                        <p>How many courses you've been on, using however many techniques and methods. Unless you've come to
+                            realize the value of mindset, then you've yet to understand how succesa comes.</p>
+                        <p>With everyone else's mindset involved impacting too. Hence why business coaching is so crucial
+                            for success.</p>
+                    </li>
+                </ul>
+                <!-- End Questions list -->
             </div>
         </div>
         <!-- End Container -->
@@ -60,7 +77,60 @@ export default {
 
     .questions {
         color: white;
-        width: 30%;
+        width: 33%;
+
+        h2 {
+            font-weight: 600;
+        }
+
+        // List items
+        li {
+            background-color: transparent;
+            color: white;
+            border-bottom: 1px solid grey;
+            list-style-type: none;
+            cursor: pointer;
+
+            h5 {
+                margin: 1.5rem 0;
+                display: inline-block;
+
+                &::before {
+                    display: inline-block;
+                    content: '\f0d7';
+                    font-family: FontAwesome;
+                    font-weight: normal;
+                    font-style: normal;
+                    border: 3px solid white;
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                    text-align: center;
+                    margin-right: 1rem;
+                }
+            }
+
+            p {
+                font-size: .8rem;
+                display: none;
+            }
+
+            &:hover {
+                h5 {
+                    color: $main-green;
+
+                    &::before {
+                        content: '\f0d8';
+                        border-color: $main-green;
+                    }
+                }
+
+                p {
+                    display: block;
+                }
+            }
+        }
     }
+
 }
 </style>
