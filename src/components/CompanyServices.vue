@@ -61,6 +61,11 @@ export default {
                 <!-- Row -->
             </div>
             <!-- Container fluid -->
+            <div class="dots d-flex justify-content-center align-items-center mt-4">
+                <div class="dot active mx-2"></div>
+                <div class="dot mx-2"></div>
+                <div class="dot mx-2"></div>
+            </div>
         </div>
         <!-- Container -->
     </div>
@@ -90,6 +95,10 @@ export default {
     }
 }
 
+.card {
+    box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 0.2);
+}
+
 .card-body {
     h5 {
         color: black;
@@ -108,6 +117,19 @@ export default {
         color: $main-green;
         font-size: .8rem;
         font-weight: 700;
+    }
+}
+
+.dot {
+    width: 7px;
+    height: 7px;
+    background-color: lightgrey;
+    border-radius: 50%;
+
+    &.active {
+        width: 10px;
+        height: 10px;
+        background-color: black;
     }
 }
 </style>
