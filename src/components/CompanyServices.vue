@@ -21,6 +21,11 @@ export default {
                 },
             ]
         }
+    },
+    methods: {
+        getImagePath(imageName) {
+            return new URL(`../assets/img/${imageName}`, import.meta.url).href;
+        }
     }
 }
 </script>
@@ -35,12 +40,12 @@ export default {
                 <h5>Let's Dream Big Together</h5>
                 <h2>Explore How can I help you</h2>
                 <!-- Row -->
-                <div class="row row-cols-3">
+                <div class="row row-cols-3 mt-5">
                     <!-- Column -->
                     <div class="col" v-for="(service, index) in services">
                         <!-- Card -->
                         <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img :src="getImagePath(service.image)" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">{{ service.title }}</h5>
                                 <p class="card-text">{{ service.paragraph }}</p>
@@ -81,6 +86,7 @@ export default {
 
     h2 {
         font-weight: 600;
+        margin: 1rem 0;
     }
 }
 
