@@ -82,6 +82,10 @@ export default {
             padding: 10px 2rem;
         }
 
+        button:hover {
+            background-color: $hover-button;
+        }
+
     }
 
     &-image {

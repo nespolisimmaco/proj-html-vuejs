@@ -136,6 +136,11 @@ footer {
         position: absolute;
         bottom: 1rem;
         right: 1rem;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: $hover-button;
+        }
     }
 
     ul {

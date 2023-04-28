@@ -7,21 +7,33 @@ export default {
                     image: "course-02-443x600.jpg",
                     price: "$40.00",
                     title: "Learning to Write as a Professional Author",
+                    lessons: "20 Lessons",
+                    students: "50 Students",
+                    description: "The purpose of this course is to provide the advanced writing techniques commonly used for inspiring readers and ..."
                 },
                 {
                     image: "stock-full-hd-03-443x600.jpg",
                     price: "Free",
                     title: "Customer-centric Info-Tech Strategies",
+                    lessons: "20 Lessons",
+                    students: "50 Students",
+                    description: "The purpose of this course is to provide the advanced writing techniques commonly used for inspiring readers and ..."
                 },
                 {
                     image: "stock-full-hd-04-443x600.jpg",
                     price: "$19.00",
                     title: "Open Programming Courses for Everyone: Python",
+                    lessons: "20 Lessons",
+                    students: "50 Students",
+                    description: "The purpose of this course is to provide the advanced writing techniques commonly used for inspiring readers and ..."
                 },
                 {
                     image: "stock-full-hd-06-443x600.jpg",
                     price: "$26.00",
                     title: "Academic Listening and Note-taking",
+                    lessons: "20 Lessons",
+                    students: "50 Students",
+                    description: "The purpose of this course is to provide the advanced writing techniques commonly used for inspiring readers and ..."
                 },
             ]
         }
@@ -50,6 +62,13 @@ export default {
                         <div class="card-img-overlay d-flex flex-column justify-content-end">
                             <h5 class="card-title">{{ course.price }}</h5>
                             <p class="card-text">{{ course.title }}</p>
+                            <div class="course">
+                                <div class="d-flex justify-content-start">
+                                    <div class="lessons me-4">{{ course.lessons }}</div>
+                                    <div class="students">{{ course.students }}</div>
+                                </div>
+                                <p class="description">{{ course.description }}</p>
+                            </div>
                         </div>
                     </div>
                     <!-- Card -->
@@ -87,16 +106,41 @@ export default {
 }
 
 // Card
-.card-img-overlay {
-    background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.4) 20%, rgba(0, 0, 0, 0) 100%);
+.card {
+    .card-img-overlay {
+        background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.4) 20%, rgba(0, 0, 0, 0) 100%);
 
-    .card-title {
-        font-weight: 700;
-    }
+        .card-title {
+            font-weight: 700;
+        }
 
-    .card-text {
-        color: white;
-        font-weight: 700;
+        .card-text {
+            color: white;
+            font-weight: 700;
+        }
+
+        .lessons,
+        .students,
+        .description {
+            color: white;
+            font-size: .8rem;
+            font-weight: 500;
+            opacity: 0;
+            visibility: hidden;
+            max-height: 0;
+            transition: all 0.3s;
+        }
+
+        &:hover {
+
+            .lessons,
+            .students,
+            .description {
+                opacity: 1;
+                visibility: visible;
+                max-height: 100px;
+            }
+        }
     }
 }
 

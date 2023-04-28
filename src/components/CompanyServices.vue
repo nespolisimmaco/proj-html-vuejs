@@ -111,12 +111,21 @@ export default {
 
 .card-footer {
     background-color: white;
+    transition: all 0.3s;
 
     a {
         text-decoration: none;
         color: $main-green;
         font-size: .8rem;
         font-weight: 700;
+    }
+
+    &:hover {
+        background-color: $main-green;
+
+        a {
+            color: white;
+        }
     }
 }
 

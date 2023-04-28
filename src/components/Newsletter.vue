@@ -82,6 +82,9 @@ export default {
         font-weight: 700;
         font-size: .8rem;
 
+        &:hover {
+            background-color: $hover-button;
+        }
     }
 }
 </style>

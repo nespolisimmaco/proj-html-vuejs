@@ -118,6 +118,15 @@ export default {
 .ms_card {
     background-color: $jumbotron-background;
     border-radius: 5px;
+    transition: all 0.2s;
+
+    &:hover {
+        border-left: 5px solid $main-green;
+
+        button {
+            background-color: $hover-button;
+        }
+    }
 
     .place {
         font-size: .7rem;

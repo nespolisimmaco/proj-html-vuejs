@@ -57,8 +57,8 @@ export default {
             </div>
             <!-- End Container fluid -->
             <div class="buttons mt-5">
-                <button class="btn white-button">Learn more</button>
-                <button class="btn green-button">Get started today</button>
+                <button class="btn ms_white-button">Learn more</button>
+                <button class="btn ms_green-button">Get started today</button>
             </div>
         </div>
         <!-- End Container -->
@@ -94,22 +94,34 @@ export default {
     }
 }
 
-.white-button {
-    color: $main-green;
-    font-weight: 600;
-    font-size: .8rem;
-    border: 1px solid lightgrey;
-    padding: 10px 2rem;
-    margin-right: 10px;
-}
+.buttons {
+    .ms_white-button {
+        color: $main-green;
+        font-weight: 600;
+        font-size: .8rem;
+        border: 1px solid lightgrey;
+        padding: 10px 2rem;
+        margin-right: 10px;
 
-.green-button {
-    background-color: $main-green;
-    font-weight: 600;
-    font-size: .8rem;
-    padding: 10px 2rem;
-    color: white;
-    margin-left: 10px;
+        &:hover {
+            background-color: $hover-button;
+            color: white;
+        }
+    }
+
+    .ms_green-button {
+        background-color: $main-green;
+        font-weight: 600;
+        font-size: .8rem;
+        padding: 10px 2rem;
+        color: white;
+        margin-left: 10px;
+
+        &:hover {
+            background-color: $hover-button;
+        }
+    }
+
 }
 
 // End Features
