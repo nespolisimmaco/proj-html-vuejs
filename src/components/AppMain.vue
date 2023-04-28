@@ -5,6 +5,8 @@ import CompanyServices from './CompanyServices.vue';
 import CompanyCourses from './CompanyCourses.vue';
 import QA from './QA.vue';
 import UpcomingEvents from './UpcomingEvents.vue';
+import Reviews from './Reviews.vue';
+
 export default {
     name: "AppMain",
     components: {
@@ -13,7 +15,8 @@ export default {
         CompanyServices,
         CompanyCourses,
         QA,
-        UpcomingEvents
+        UpcomingEvents,
+        Reviews
     }
 }
 </script>
@@ -26,6 +29,7 @@ export default {
         <CompanyCourses />
         <QA />
         <UpcomingEvents />
+        <Reviews />
     </main>
 </template>
 
