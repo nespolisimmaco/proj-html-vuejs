@@ -6,13 +6,21 @@ export default {
         explore: Array,
         links: Array,
         information: Array
+    },
+    data() {
+        top: 0
+    },
+    methods: {
+        scrollTop() {
+            window.scrollTo(0, this.top);
+        }
     }
 }
 </script>
 
 <template>
     <footer>
-        <button><i class="fa-solid fa-arrow-up-long"></i></button>
+        <button @click="scrollTop"><i class="fa-solid fa-arrow-up-long"></i></button>
         <!-- Container -->
         <div class="ms_container">
             <!-- Container fluid -->
