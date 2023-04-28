@@ -60,7 +60,7 @@ export default {
                     <!-- Column -->
                     <div class="col" v-for="(event, index) in events" :key="index">
                         <!-- Card -->
-                        <div class="ms_card py-3 px-2">
+                        <div class="ms_card py-3 px-4">
                             <!-- Inner row -->
                             <div class="row">
                                 <!-- Inner column -->

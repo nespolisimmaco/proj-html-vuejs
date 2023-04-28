@@ -13,7 +13,8 @@ export default {
         <div class="container d-flex justify-content-start">
             <!-- Video -->
             <div class="video d-flex align-items-center me-5">
-                <img class="video-poster" src="../assets/img/home-business-video-poster-670x450.jpg" alt="Video poster">
+                <img class="video-poster rounded" src="../assets/img/home-business-video-poster-670x450.jpg"
+                    alt="Video poster">
                 <img class="youtube-icon" src="../assets/img/icon-youtube-play.png" alt="Youtube icon">
             </div>
             <!-- Question and answers -->
