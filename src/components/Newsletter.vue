@@ -7,6 +7,8 @@ export default {
 <template>
     <!-- Newsletter -->
     <div class="newsletter text-center">
+        <img id="dots" src="../assets/img/maxcoach-shape-09.png">
+        <img id="circle" src="../assets/img/maxcoach-shape-02.png">
         <!-- Container -->
         <div class="ms_smaller-container">
             <h2>Subscribe <span>Newsletters</span></h2>
@@ -30,6 +32,19 @@ export default {
 
 .newsletter {
     padding: 4rem 0;
+    position: relative;
+
+    #dots {
+        position: absolute;
+        top: 50px;
+        right: 200px;
+    }
+
+    #circle {
+        position: absolute;
+        top: 130px;
+        right: 200px;
+    }
 }
 
 .ms_smaller-container {
