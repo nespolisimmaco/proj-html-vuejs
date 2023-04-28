@@ -11,34 +11,34 @@ export default {
                     month: "NOV"
                 },
                 {
-                    place: "Texas, US",
-                    title: "Storytelling Workshop",
-                    day: "22",
+                    place: "New york, US",
+                    title: "Painting Art Contest 2020",
+                    day: "10",
+                    month: "OCT"
+                },
+                {
+                    place: "Hamburg, Germany",
+                    title: "International Art Fair 2020",
+                    day: "23",
                     month: "NOV"
                 },
                 {
-                    place: "Texas, US",
-                    title: "Storytelling Workshop",
-                    day: "22",
-                    month: "NOV"
+                    place: "Illinois, US",
+                    title: "Street Performance: Call for Artist",
+                    day: "15",
+                    month: "DEC"
                 },
                 {
-                    place: "Texas, US",
-                    title: "Storytelling Workshop",
+                    place: "Illinois, US",
+                    title: "Consumer Food Safety Education Conference",
                     day: "22",
-                    month: "NOV"
+                    month: "JUL"
                 },
                 {
-                    place: "Texas, US",
-                    title: "Storytelling Workshop",
-                    day: "22",
-                    month: "NOV"
-                },
-                {
-                    place: "Texas, US",
-                    title: "Storytelling Workshop",
-                    day: "22",
-                    month: "NOV"
+                    place: "Dubai",
+                    title: "How meditation improves your mental health?",
+                    day: "12",
+                    month: "AUG"
                 },
             ]
         }
@@ -56,18 +56,35 @@ export default {
                 <h5>Wanna transform your life?</h5>
                 <h2>Upcoming Events</h2>
                 <!-- Row -->
-                <div class="row row-cols-2 g-4 mt-4">
+                <div class="row row-cols-2 g-4 mt-4 mb-5">
+                    <!-- Column -->
                     <div class="col" v-for="(event, index) in events" :key="index">
-                        <div class="ms_card">
-                            <div class="place">{{ event.place }}</div>
-                            <div class="title">{{ event.title }}</div>
-                            <div class="day">{{ event.day }}</div>
-                            <div class="month">{{ event.month }}</div>
-                            <button class="btn">Get ticket</button>
+                        <!-- Card -->
+                        <div class="ms_card py-3 px-2">
+                            <!-- Inner row -->
+                            <div class="row">
+                                <!-- Inner column -->
+                                <div class="col-8 text-start">
+                                    <div class="place my-2">{{ event.place }}</div>
+                                    <div class="title">{{ event.title }}</div>
+                                </div>
+                                <!-- Inner column -->
+                                <div class="col-4">
+                                    <div class="day">{{ event.day }}</div>
+                                    <div class="month">{{ event.month }}</div>
+                                    <button class="btn">Get ticket</button>
+                                </div>
+                            </div>
+                            <!-- End Inner row -->
                         </div>
+                        <!-- End Card -->
                     </div>
+                    <!-- End Column -->
                 </div>
                 <!-- End Row -->
+                <div class="view-events">
+                    Excited about our event? <a href="#">View all events &rarr;</a>
+                </div>
             </div>
             <!-- End Container fluid -->
         </div>
@@ -101,5 +118,51 @@ export default {
 .ms_card {
     background-color: $jumbotron-background;
     border-radius: 5px;
+
+    .place {
+        font-size: .7rem;
+        color: grey;
+
+        &::before {
+            content: '\f3c5';
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            margin-right: 5px;
+        }
+    }
+
+    .title {
+        font-weight: 600;
+    }
+
+    .day {
+        color: $main-green;
+        font-size: 2.5rem;
+    }
+
+    .month {
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    button {
+        background-color: $main-green;
+        color: white;
+        font-size: .8rem;
+        font-weight: 700;
+        padding: 5px 1.8rem;
+    }
+}
+
+.view-events {
+    font-size: .8rem;
+    font-weight: 500;
+
+    a {
+        color: $main-green;
+        font-weight: 700;
+        text-decoration-color: lightgrey;
+    }
 }
 </style>
